@@ -2,6 +2,7 @@
     "name": "ocdladefense/appserver-amazon-s3",
     "description": "Module for retrieving objects from an Amazon S3 bucket.",
     "type": "wordpress-theme",
+    "license": "MIT",
     "authors": [
         {
             "name": "José Bernal",
