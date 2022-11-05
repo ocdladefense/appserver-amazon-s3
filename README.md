@@ -1,3 +1,3 @@
-# template-appserver-module
-PHP repository template for building appserver modules.
+# appserver-amazon-s3
+Appserver module for accessing objects stored in an Amazon S3 bucket.
 
