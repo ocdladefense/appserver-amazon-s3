@@ -4,22 +4,18 @@
 
 
 
-class ExampleModule extends Module {
+class S3Module extends Module {
 
     public function __construct() {
         parent::__construct();
     }
 
-    public function doAction($param) {
-        $param = $param ?? "Example parameter.";
-
-        return "The route executed with URL parameter, <i>$param</i>.";
-    }
 
 
-    public function doActionWithTemplate($param) {
 
-        $tpl = new Template("example");
+    public function doAction($param = null) {
+
+        $tpl = new Template("s3");
         $tpl->addPath(__DIR__ . "/templates");
 
         return $tpl;

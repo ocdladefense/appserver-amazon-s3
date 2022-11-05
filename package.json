@@ -1,0 +1,42 @@
+{
+    "name": "@ocdladefense/appserver",
+    "version": "1.0.0",
+    "homepage": "https://github.com/ocdladefense/appserver#readme",
+    "description": "Appserver.",
+    "license": "UNLICENSED",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "prebuild": "babel s3/s3.js -d s3/src",
+      "build": "webpack --mode=development --entry ./s3/src/s3.js -o ./s3/dist",
+      "foobar": "webpack --entry s3/s3.js --mode development --target web --devtool false -o main.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/ocdladefense/appserver.git"
+    },
+    "contributors": [
+      {
+        "name": "José Bernal",
+        "email": "jbernal.web.dev@gmail.com"
+      }
+    ],
+    "devDependencies": {
+      "@babel/cli": "^7.16.7",
+      "@babel/core": "^7.16.7",
+      "@babel/plugin-transform-modules-commonjs": "^7.16.7",
+      "@babel/preset-env": "^7.16.7",
+      "@babel/preset-react": "^7.16.7",
+      "babel-loader": "^8.2.3",
+      "webpack": "^5.74.0",
+      "webpack-cli": "^4.10.0"
+    },
+    "dependencies": {
+      "@aws-sdk/client-cognito-identity": "^3.171.0",
+      "@aws-sdk/client-s3": "^3.171.0",
+      "@aws-sdk/credential-provider-cognito-identity": "^3.171.0",
+      "@bundled-es-modules/pdfjs-dist": "^2.5.207-rc1",
+      "@ocdladefense/google-maps": "^1.0.3",
+      "@ocdladefense/query-builder": "^1.0.7",
+      "@ocdladefense/view": "file:dev_modules/node-view"
+    }
+}  
