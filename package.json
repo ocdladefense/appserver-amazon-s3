@@ -7,8 +7,8 @@
     "build": "webpack"
   },
   "dependencies": {
-    "@ocdladefense/s3": "file:dev_modules/node-s3",
-    "@ocdladefense/view": "file:dev_modules/node-view",
+    "@ocdladefense/s3": "latest",
+    "@ocdladefense/view": "latest",
     "acorn": "^8.8.1",
     "acorn-import-assertions": "^1.8.0",
     "ajv": "^6.12.6",
