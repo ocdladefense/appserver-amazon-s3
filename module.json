@@ -1,12 +1,12 @@
 
 {
-	"name": "example",
-   "comment": "Example of an appserver module.",
+	"name": "s3",
+   "comment": "Module for retrieving S3 objects.",
    "connectedApp": "default",
-	"description": "Example of an appserver module.",
-   "files": ["Example.php"],
+	"description": "Module for retrieving S3 objects.",
+   "files": ["S3.php"],
 	"routes": {
-      "example/%param":{
+      "legal-resource-library":{
          "callback": "doAction",
          "content-type": "text/html"
       }
