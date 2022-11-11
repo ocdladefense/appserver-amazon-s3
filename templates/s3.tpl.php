@@ -20,20 +20,30 @@ NOTES:
  - For IAM role policy and CORS setup, see the AWS SDK for JavaScript Developer Guide topic at
    https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/s3-example-photos-view.html.
 -->
+<style type="text/css">
+ #back {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  padding: 6px;
+ }
 
+ #back:hover {
+  border: 1px solid #aaa;
+ }
+</style>
 <link rel="stylesheet" type="text/css" href="/modules/s3/assets/css/styles.css" />
 
 <h1>Legal Resource Library</h1>
-<p style="font-style:italic;">Viewer v0.1</p>
+<p>
+  <span style="font-style:italic;">Viewer v0.1</span>
+  <a href="#" data-prefix="" id="back">&larr; back</a>
+</p>
 
 
-
-<a href="#" data-prefix="" id="up">&lt;-- back</a>
 <div id="viewer">&nbsp;</div>
 
 
 
-<script src="/modules/s3/node_modules/@ocdladefense/s3/dist/main.js">
-</script>
-<script src="/modules/s3/src/index.js">
+<script src="/modules/s3/dist/main.js">
 </script>
