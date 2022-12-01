@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@ocdladefense/s3": "latest",
-    "@ocdladefense/view": "latest",
+    "@ocdladefense/view": "2.2.1",
     "acorn": "^8.8.1",
     "acorn-import-assertions": "^1.8.0",
     "ajv": "^6.12.6",
