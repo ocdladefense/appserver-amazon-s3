@@ -8,7 +8,9 @@
 	"routes": {
       "legal-resource-library":{
          "callback": "doAction",
-         "content-type": "text/html"
+         "content-type": "text/html",
+			"access":"is_authenticated",
+			"authorization":"webserver"
       }
     }
 }
